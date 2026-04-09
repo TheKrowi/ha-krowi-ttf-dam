@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0] - 2026-04-09
+
+### Changed
+- Renamed sensors to follow Nord Pool naming convention:
+  - `sensor.krowi_ttf_dam_current_price` / "TTF DAM - Huidige prijs" (was: today)
+  - `sensor.krowi_ttf_dam_average_price` / "TTF DAM - 30-daags gemiddelde" (was: 30-day average)
+
 ## [1.1.0] - 2026-04-09
 
 ### Changed

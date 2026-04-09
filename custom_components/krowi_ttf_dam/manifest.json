@@ -1,7 +1,7 @@
 {
   "domain": "krowi_ttf_dam",
   "name": "Krowi TTF DAM",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "config_flow": true,
   "documentation": "https://github.com/TheKrowi/ha-krowi-ttf-dam",
   "issue_tracker": "https://github.com/TheKrowi/ha-krowi-ttf-dam/issues",
