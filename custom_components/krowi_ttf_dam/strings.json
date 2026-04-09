@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TTF DAM Gas",
+        "description": "Add the TTF DAM gas price integration. No configuration required."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "[%key:common::config_flow::abort::single_instance_allowed%]"
+    }
+  }
+}
