@@ -30,7 +30,7 @@ class _KrowiTtfDamBaseSensor(CoordinatorEntity[KrowiTtfDamCoordinator], SensorEn
 
 
 class KrowiTtfDamAverageSensor(_KrowiTtfDamBaseSensor):
-    _attr_name = "TTF DAM - 30-daags gemiddelde"
+    _attr_name = "TTF DAM 30-day average"
     _attr_unique_id = "krowi_ttf_dam_average_price"
 
     @property
@@ -39,7 +39,7 @@ class KrowiTtfDamAverageSensor(_KrowiTtfDamBaseSensor):
 
 
 class KrowiTtfDamTodaySensor(_KrowiTtfDamBaseSensor):
-    _attr_name = "TTF DAM - Huidige prijs"
+    _attr_name = "TTF DAM current price"
     _attr_unique_id = "krowi_ttf_dam_current_price"
 
     @property
