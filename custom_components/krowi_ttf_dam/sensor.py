@@ -21,8 +21,9 @@ async def async_setup_entry(
 
 
 class _KrowiTtfDamBaseSensor(CoordinatorEntity[KrowiTtfDamCoordinator], SensorEntity):
-    _attr_native_unit_of_measurement = "€/MWh"
+    _attr_native_unit_of_measurement = "EUR/kWh"
     _attr_state_class = SensorStateClass.MEASUREMENT
+    _attr_suggested_display_precision = 7
 
     def __init__(self, coordinator: KrowiTtfDamCoordinator) -> None:
         super().__init__(coordinator)

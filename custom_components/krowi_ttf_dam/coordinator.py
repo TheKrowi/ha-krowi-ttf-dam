@@ -35,10 +35,10 @@ class KrowiTtfDamCoordinator(DataUpdateCoordinator):
             raise UpdateFailed(f"Error fetching TTF DAM data: {err}") from err
 
         try:
-            average = float(payload["statistics"]["averagePrice"])
+            average = round(float(payload["statistics"]["averagePrice"]) / 1000, 7)
             data_points = sorted(payload["dataSeries"]["data"], key=lambda e: e["x"])
-            today_price = float(data_points[-1]["y"])
-            history = {entry["name"]: entry["y"] for entry in data_points}
+            today_price = round(float(data_points[-1]["y"]) / 1000, 7)
+            history = {entry["name"]: round(float(entry["y"]) / 1000, 7) for entry in data_points}
         except (KeyError, IndexError, TypeError, ValueError) as err:
             raise UpdateFailed(f"Error parsing TTF DAM response: {err}") from err
 
